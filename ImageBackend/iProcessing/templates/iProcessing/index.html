@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>VALLUVAN | TAMIL </title>
+</head>
+<body>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+
+html{
+  height: 100%;
+  transition: background-color 5s,color 0.25s;
+}
+
+
+.valluvan{
+    color: #fff;
+}
+
+.para{
+    color: #fff;
+}
+
+h1{
+  color: white;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  color: #fff;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+    font-family: var(--font-family);
+    font-size: var(--font-size-sm);
+    color: black;
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(38,64,139,1) 84%);
+    letter-spacing: 1px;
+    transition: background-color 0.25s,color 0.25s;
+    height: 100%;
+}
+
+
+
+:root{
+    --light-color: #fff;
+    --light-color-alt: #afb6cd;
+    --primary-background-color: #171713;
+    --secondary-background-color: #252830;
+    --hover-light-color: var(--light-color);
+    --hover-dark-color: var(--primary-background-color);
+    --gradient-color: linear-gradient(
+        115deg,#4fcf70,#fad648,#a767e5,#12bcfe,#44ce7b);
+    --transparent-light-color: rgba(255,255,255,.05);
+    --transparent-dark-color: rgba(0,0,0,.75);
+    --font-family: 'Poppins', sans-serif;
+    --font-family2: 'Source Sans Pro', sans-serif;
+    --font-size-xsm: 1.2rem;
+    --font-size-sm: 1.6rem;
+    --font-size-md: 2.4rem;
+    --font-size-lg: 3rem;
+    --font-size-xl: 4rem;
+    --gap: 2rem;
+    --margin-sm: 2rem;
+    --margin-md: 3rem;
+    --item-min-height-sm: 20rem;
+    --item-min-height-md: 30rem;
+}
+
+
+form{
+    margin: auto; 
+    font-family: var(--font-family);
+    color: var(--primary-background-color);
+    background-color: rgb(206, 227, 250);
+    font-size: 10;
+    padding: 1rem;
+    border-radius: 9px;
+    text-align: center;
+    height: 60%;
+    width: 70%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    
+}
+input{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: rgb(234, 249, 255);
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+
+}
+
+input[type ="file"]{
+    display:none;
+}
+
+.label1{
+    cursor: pointer;
+     color: black;
+    height: 40px;
+    width: 200px;
+    background-color: #44ce7b; 
+}
+
+
+.details{
+  text-align:inherit;
+  padding-right: 10rem;
+   /* margin-left: 15rem;
+  margin-bottom: 0.3rem;  */
+  margin: auto;
+}
+.detail{
+  text-align:inherit;
+  padding-right: 8rem;
+   /* margin-left: 15rem;
+  margin-bottom: 0.3rem;  */
+  margin: auto;
+}
+
+label{
+    font-size:20px;
+    font-style: oblique;
+    font-family: var(--font-family2);
+}
+
+input::placeholder{
+    text-align:left;
+    box-sizing: border-box;
+    margin: auto;
+    font-size: medium;
+}
+
+.email{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1.2rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    border-color: transparent;
+    
+}
+
+
+.email:hover{
+    border-color: #4d4de4;
+    border-radius: 4px;
+}
+.password{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1.2rem;
+    margin-bottom: 1.2rem;
+
+    border-radius: 5px;
+    text-decoration: none;
+    border-color: transparent;
+}
+
+.password:hover{
+  border-color: #4d4de4;
+  border-radius: 4px;
+}
+
+/* CSS */
+.button{
+  appearance: none;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #1A1A1A;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 10px;
+  min-width: 0;
+  outline: none;
+  padding: 6px 3px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 70%;
+  height: 8%;
+  will-change: transform;
+  text-decoration: none;
+}
+
+.button:disabled {
+  pointer-events: none;
+}
+
+.button:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+.button::after{
+  opacity: 0;
+    transform: scale(0);
+    transition: opacity .25s ease-in;
+}
+.para{
+  margin-top: 6rem;
+}
+p{
+  color: #171713;
+  margin: auto;
+  font-size: small;
+}
+
+.paras{
+  margin-bottom: 1rem;
+}
+    </style>
+    <h1 class="valluvan">VALLUVAN</h1>
+    <!-- <p class="para">your name board translator</p> -->
+    
+    <form action="http://tamilhack.pagekite.me" method="POST" enctype="multipart/form-data">
+        <style>
+            input[type="file"] {
+          display: none;
+      }
+      
+      .custom-file-upload {
+          border: 1px solid #ccc;
+          display: inline-block;
+          padding: 6px 12px;
+          cursor: pointer;
+      }
+
+      #file-upload{
+        border: 2px solid black;
+
+      }
+         </style>
+   
+        <label> Choose an image from gallery</label>
+        <label class="button" for="file-upload"> Choose an image</label><br><br>
+        <input  class="custom-file-upload" id="file-upload" type="file" accept="image/*" name="picture"></input> 
+
+        <label> Take a picture from camera </label><br>
+        <label class="button" for="file-upload"> Take a picture</label> <br><br>
+        <input  type="file" accept="image/*" capture="environment" name="picture"></input><br><br>
+
+        <label for="image"></label> <br>
+        <input class="button" type="submit" name="Upload" value="Upload"></input> <br><br>
+        {% if audioready %}
+        <!-- <h1>Recieved success, Here's your audio: </h1> -->
+        <audio controls >
+        <source src="{{ link }}" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    {% endif %}
+    </form>
+
+
+  
+    <style>
+        audio {
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 50px;
+    width: 75%;
+    opacity: 1;
+    background-color:  #fff;
+    border: 2px solid transparent;
+    margin-left: 10%;
+    /* border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1; */
+    border-image: linear-gradient(to bottom right, #d99543 0%, #5F3519 100%);
+    border-image-slice: 3;
+  }
+    </style>
+
+
+</body>
+</html>
