@@ -20,7 +20,7 @@
 
 ### Execution Steps - 
 
-> Download this .apk file and run this app on any Android Device: [VALLAVAN - APK](https://appsgeyser.com/widgetdownload.php?widget=Valluvan_16399176)
+> Download this .apk file and run this app on any Android Device: [VALLUVAN - APK](https://appsgeyser.com/widgetdownload.php?widget=Valluvan_16399176)
 
 
 ### Sample Input/Output - 
